@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - RetroGame">
+    <title>Contacto - RetroGame</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/png" href="../imgarticulos/favicon-32x32.png">
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <div class="side-panel"></div>
+        <div class="main-content-wrapper">
+            <!-- Header con Bootstrap -->
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="../index.html" class="logo navbar-brand">RetroGame</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto nav-links">
+                                <li class="nav-item"><a class="nav-link" href="../index.html#inicio">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../index.html#articulos">Artículos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="../index.html#sobre-mi">Sobre mí</a></li>
+                                <li class="nav-item"><a class="nav-link" href="./formulario.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- Contenedor del Formulario -->
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tenés alguna consulta o sugerencia? ¡Nos encantaría saber de vos!</p>
+
+                    <!-- Formulario -->
+                    <form id="contactForm">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="apellido">Apellido *</label>
+                                <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="edad">Edad *</label>
+                                <input type="number" id="edad" name="edad" required placeholder="Tu edad" min="1" max="120">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Género *</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="hombre" name="genero" value="Hombre" required>
+                                    <label for="hombre">Hombre</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="mujer" name="genero" value="Mujer" required>
+                                    <label for="mujer">Mujer</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="nobinario" name="genero" value="No binario" required>
+                                    <label for="nobinario">No binario</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="otro" name="genero" value="Otro" required>
+                                    <label for="otro">Otro</label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="pais">País *</label>
+                            <select id="pais" name="pais" required>
+                                <option value="">Seleccioná tu país</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="México">México</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" required placeholder="Escribí tu mensaje aquí..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4 class="footer-title">RetroGame</h4>
+                        <p>Recordando la era dorada del gaming desde 2025.</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Enlaces Rápidos</h4>
+                        <ul class="footer-links">
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../index.html#articulos">Artículos</a></li>
+                            <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+                            <li><a href="./formulario.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4 class="footer-title">Contacto</h4>
+                        <p>Email: contacto@retrogame.com</p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.x.com/" title="Twitter/X"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/" title="Youtube"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © 2025 — RetroGame. Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+
+
+        <div class="side-panel"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
